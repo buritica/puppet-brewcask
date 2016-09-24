@@ -20,7 +20,7 @@ Puppet::Type.type(:package).provide :brewcask,
   end
 
   def self.caskroom
-    "#{Facter[:brewcask_root].value}/Caskroom"
+    "#{Facter[:homebrew_root].value}/Caskroom"
   end
 
   def self.current(name)
